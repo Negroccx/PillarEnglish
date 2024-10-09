@@ -71,21 +71,17 @@
 
     <div class="featuresBanner">
         <div>
-            <p class="featuresUp">10</p>
-            <p class="featuresDown">Caracteristica</p>
+            <p class="featuresUp">20</p>
+            <p class="featuresDown">Años</p>
         </div>
         <div>
-            <p class="featuresUp">10</p>
-            <p class="featuresDown">Caracteristica</p>
-        </div>
-        <div>
-            <p class="featuresUp">10</p>
-            <p class="featuresDown">Caracteristica</p>
+            <p class="featuresUp">+2000</p>
+            <p class="featuresDown">Asistentes</p>
         </div>
     </div>
 
-    <section class="container featuresSection" id="sobreNosotros">
-        <div>
+    <section class="featuresSection" id="sobreNosotros">
+        <div class="container">
             <div class="features">
                 <h2 class="titulos">¿Por qué elegir nuestros <span class="titulosDestacado">Speaking Club</span>?</h2>
                 <p class="general bajada">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -94,18 +90,18 @@
                 </a>
             </div>
             <div class="container">
-                <div>
-                    <div class="features__feature">
+                <div class="row justify-content-center">
+                    <div class="features__feature col-xl-6">
                         <div class="features__feature--icon">
                             <i class="featuresIcon fa-solid fa-face-laugh-beam"></i>
                         </div>
                         <div>
                             <h4 class="subtitle">Entorno amigable</h4>
-                        <p class="general">Te ofrecemos un entorno amigable y divertido en el que desarrollamos
+                            <p class="general">Te ofrecemos un entorno amigable y divertido en el que desarrollamos
                             actividades para practicar inglés y conocer gente nueva</p>
                         </div>
                     </div>
-                    <div class="features__feature">
+                    <div class="features__feature  col-xl-6">
                         <div class="features__feature--icon">
                             <i class="featuresIcon fa-solid fa-circle-nodes"></i>
                         </div>
@@ -115,7 +111,7 @@
                                 oportunidades laborales y colaborativas</p>
                         </div>
                     </div>
-                    <div class="features__feature">
+                    <div class="features__feature  col-xl-6">
                         <div class="features__feature--icon">
                             <i class="featuresIcon fa-solid fa-graduation-cap"></i>
                         </div>
@@ -125,7 +121,7 @@
                             para brindarte la mejor experiencia</p>
                        </div>
                     </div>
-                    <div class="features__feature">
+                    <div class="features__feature  col-xl-6">
                         <div  class="features__feature--icon">
                             <i class="featuresIcon fa-solid fa-language"></i>
                         </div>
@@ -140,21 +136,38 @@
         </div>
     </section>
 
+
+
+
+  
+
+
+
+
+
     <section class=" secondaryBackground" id="eventos">
         <div class="container">
-            <h2 class="titulos">Próximos Eventos</h2>
-            <p class="general bajada">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div class="events">
+                <h2 class="titulos">Próximos <span class="titulosDestacado">Eventos</span></h2>
+                <p class="general bajada">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="eventsList">
                 <div class="event">
+                    <div class="event__img">
+                        <img class="event__img--image" src="./images/3.webp" alt="">
+                    </div>
                     <p class="event__date">16/10</p>
                     <div>
                         <p class="event__place">Negroni Pilar</p>
                         <p class="event__adress"></p>
                         <p class="event__hour">18hs.</p>
                     </div>
-                    <button class="event__button">Reservá tu lugar</button>
+                    <button class="event__button" type="button" data-bs-toggle="collapse" data-bs-target="#event1Collapse" aria-controls="event1Collapse" aria-expanded="false" aria-label="Toggle navigation">Reservá tu lugar</button>
+                    <div id="event1Collapse" class="collapse mt-3">
+                        <div id="paypal-button-container1"></div>
+                    </div>
                 </div>
-                <div class="event d-flex justify-content-evenly">
+                <div class="event">
                     <div class="event__img">
                         <img class="event__img--image" src="./images/3.webp" alt="">
                     </div>
@@ -164,35 +177,139 @@
                         <p class="event__adress"></p>
                         <p class="event__hour">18hs.</p>
                     </div>
-                    <button class="event__button">Reservá tu lugar</button>
+                    <button class="event__button" type="button" data-bs-toggle="collapse" data-bs-target="#event2Collapse" aria-controls="event2Collapse" aria-expanded="false" aria-label="Toggle navigation">Reservá tu lugar</button>
+                    <div id="event2Collapse" class="collapse mt-3">
+                        <div id="paypal-button-container2"></div>
+                    </div>
                 </div>
                 <div class="event">
+                    <div class="event__img">
+                        <img class="event__img--image" src="./images/3.webp" alt="">
+                    </div>
                     <p class="event__date">16/10</p>
                     <div>
                         <p class="event__place">Negroni Pilar</p>
                         <p class="event__adress"></p>
                         <p class="event__hour">18hs.</p>
                     </div>
-                    <button class="event__button">Reservá tu lugar</button>
+                    <button class="event__button" type="button" data-bs-toggle="collapse" data-bs-target="#event3Collapse" aria-controls="event3Collapse" aria-expanded="false" aria-label="Toggle navigation">Reservá tu lugar</button>
+                    <div id="event3Collapse" class="collapse mt-3">
+                        <div id="paypal-button-container3"></div>
+                    </div>
                 </div>
                 <div class="event">
+                    <div class="event__img">
+                        <img class="event__img--image" src="./images/3.webp" alt="">
+                    </div>
                     <p class="event__date">16/10</p>
                     <div>
                         <p class="event__place">Negroni Pilar</p>
                         <p class="event__adress"></p>
                         <p class="event__hour">18hs.</p>
                     </div>
-                    <button class="event__button">Reservá tu lugar</button>
+                    <button class="event__button" type="button" data-bs-toggle="collapse" data-bs-target="#event4Collapse" aria-controls="event4Collapse" aria-expanded="false" aria-label="Toggle navigation">Reservá tu lugar</button>
+                    <div id="event4Collapse" class="collapse mt-3">
+                        <div id="paypal-button-container4"></div>
+                    </div>
                 </div>
             </div>
-    
         </div>
     </section>
+
+    <section class="testimonios">
+        <div class="container py-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-10 col-xl-8 text-center">
+              <h3 class="fw-bold mb-4">Testimonios</h3>
+              <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+                quisquam eum porro a pariatur veniam.
+              </p>
+            </div>
+          </div>
+      
+          <div class="row text-center">
+            <div class="col-md-4 mb-4 mb-md-0 d-flex">
+              <div class="card">
+                <div class="card-body py-4 mt-2">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img src="./images/man.png"
+                      class="rounded-circle shadow-1-strong" width="100" height="100" />
+                  </div>
+                  <h5 class="font-weight-bold">Nombre</h5>
+                  <h6 class="font-weight-bold my-3">Lorem, ipsum dolor.</h6>
+
+                  <p class="mb-2">
+                    <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quod ex autem aperiam sit ab, blanditiis repellat aut?
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0 d-flex">
+              <div class="card">
+                <div class="card-body py-4 mt-2">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img src="./images/man.png"
+                      class="rounded-circle shadow-1-strong" width="100" height="100" />
+                  </div>
+                  <h5 class="font-weight-bold">Nombre</h5>
+                  <h6 class="font-weight-bold my-3">Lorem ipsum dolor sit amet.</h6>
+                  <p class="mb-2">
+                    <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis fugiat, libero vel minima voluptate. Saepe voluptatem ipsam fugiat exercitationem laboriosam suscipit nobis modi laborum.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-0 d-flex">
+              <div class="card">
+                <div class="card-body py-4 mt-2">
+                  <div class="d-flex justify-content-center mb-4">
+                    <img src="./images/man.png"
+                      class="rounded-circle shadow-1-strong" width="100" height="100" />
+                  </div>
+                  <h5 class="font-weight-bold">Nombre</h5>
+                  <h6 class="font-weight-bold my-3">Lorem ipsum dolor sit amet.</h6>
+                  <p class="mb-2">
+                    <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eaque voluptatum illo, corporis aperiam accusantium amet dolor rem velit earum.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section class="container blog" id="blog">
         <h2 class="titulos">Nuestras <span class="titulosDestacado">Actividades</span></h2>
         <p class="general bajada">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <div class="row justify-content-center"> <!-- Aquí -->
+        <div class="row d-flex justify-content-center"> <!-- Aquí -->
             <div class="blog__card col-12 col-md-4"> <!-- Cambia aquí -->
                 <img src="./images/negroni.jpg" alt="" class="blog__card--img">
                 <h3 class="blog__card--title">Speaking Club</h3>
@@ -214,8 +331,23 @@
         </div>
     </section>
     
-    <div id="paypal-button-container">
-    </div>
+    <section class="partners">
+        <h2 class="titulos">Partners</h2>
+        <div class="container">
+        <div class="row d-flex justify-content-center">
+                <div class="col-12 col-xl-4 partners__partner">
+                    <img src="./images/Pearson.png" class="partners__partners--img" alt="">
+                </div>
+                <div class="col-12 col-xl-4 partners__partner">
+                    <img src="./images/Cambridge.png" class="partners__partners--img" alt="">
+                </div>
+                <div class="col-12 col-xl-4 partners__partner">
+                    <img src="./images/Pok.jpg" class="partners__partners--img" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
 
     <section class="contacto white" id="contacto">
         <div class="container">

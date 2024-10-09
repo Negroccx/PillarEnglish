@@ -14,6 +14,7 @@ a {
 
 .navbar {
     background-color: rgb(70, 120n, 220);
+    z-index: 2;
 }
 
 .navbar-nav {
@@ -64,12 +65,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    height: 50vh;
+    height: 60vh;
 }
 
 .hero__img {
     display: flex;
-    height: 50vh;
+    justify-content: center;
+    height: 40vh;
     padding: 0px 0px;
     position: relative;
     overflow: hidden;
@@ -80,7 +82,6 @@ a {
     height: auto; /* Mantener proporción de la imagen */
     object-fit: cover; /* Cubre todo el contenedor sin distorsión */
     position: absolute;
-    top: 0%;
 }
 
 .tituloPrincipal {
@@ -114,6 +115,11 @@ a {
     color: #1C1C1C;
     padding-bottom: 1vh;
     padding-top: 3vh;
+    text-align: center;
+}
+
+.bajada {
+    text-align: center;
 }
 
 .titulosDestacado {
@@ -170,6 +176,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
 }
 
 .featuresUp {
@@ -185,19 +192,27 @@ a {
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .features__feature {
     font-family: "brandon-grotesque", sans-serif;
     margin: 0px;
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 1rem 0px;
+    padding: 1rem 0.5rem;
+    border-radius: 8px;
 }
 
 .features {
     padding-bottom: 5vh;
+    text-align: center;
 }
 
 .features__feature--icon {
     padding-bottom: 0.5rem;
+    margin-top: 1.5rem;
 }
 
 
@@ -215,7 +230,12 @@ a {
 }
 
 .featuresSection {
-    padding-bottom: 5vh;
+    background-color: rgb(230, 230, 230);
+    padding-bottom: 10vh;
+}
+
+.events {
+    text-align: center;
 }
 
 .event {
@@ -223,6 +243,10 @@ a {
     border-radius: 8px;
     padding: 1rem;
     margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .event__img {
@@ -262,6 +286,18 @@ a {
     border-radius: 8px;
     border-width: 0px;
     height: auto;
+}
+
+.testimonios {
+    background-color: whitesmoke;
+    font-family: "brandon-grotesque", sans-serif;
+    margin: 0px 10%;
+}
+
+.card {
+    box-shadow: 0.3rem 1rem 2rem rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background-color: whitesmoke;
 }
 
 .blog__card {
@@ -315,16 +351,45 @@ a {
     white-space: nowrap;
 }
 
+.partners {
+    margin-bottom: 15%;
+}
+
+.partners__partner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.partners__partners--img {
+    width: 25%;
+    padding: 0px 0px;
+    overflow: hidden;
+    filter: grayscale(1) opacity(0.5);
+}
+
+.partners__partners--img:hover {
+    filter: grayscale(0) opacity(1);
+    transition: all 0.5s;
+}
+
 .contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #75a1fa;
     color: whitesmoke;
     padding-bottom: 3vh;
 }
 
-.whatsapp-contact {
+.whatsappLink {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+}
+
+.whatsapp-contact {
     background-color: #25D366;
     color: whitesmoke;
     border: 0px;
@@ -333,13 +398,11 @@ a {
     box-shadow: 0 2px 0 #888, 1px 4px 2px 
     rgba(0,0,0,0.2);
   color: white;
-  display: block;
   font-family: sans-serif;
   font-size: .85em;
   font-weight: 500;
   outline: none;
   padding: 1em 0;
-  position: relative;
   overflow: hidden;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
   width: 50%;
@@ -403,20 +466,24 @@ button .bi {
     .hero__img {
     height: 100%;
     width: auto;
-    overflow: visible;
+    overflow: hidden;
     }
+
     .hero__img--img {
         width: 100%; /* La imagen ocupará toda la altura del contenedor */
         height: 100%; /* Mantener proporción de la imagen */
         object-fit: visible; /* Cubre todo el contenedor sin distorsión */
-        top: 0%;
         position: relative;
-        left: 20%;
+        left: -5%;
+        overflow: hidden;
+        z-index: 0;
     }
+
     .featuresBanner {
-        position: relative;
+        padding: 8vh 10%;
     }
-    .events {
+
+    .eventsList {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -444,11 +511,9 @@ button .bi {
         display: flex;
         justify-content: center;
     }
+
     .features {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
     }
    .whatsappLink {
     display: flex;
@@ -456,8 +521,14 @@ button .bi {
     align-items: center;
    }
    .features__feature {
-    display: flex;
+    justify-content: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    margin-left: 2%;
+    margin-right: 2%;
+    width: 40%;
    }
+
    .featuresIcon {
     height: 4rem;
     width: 4rem;
@@ -474,7 +545,7 @@ button .bi {
    }
 
    .featuresSection {
-    padding: 0px 10%;
+    padding: 5% 5%;
    }
 
    .event__img {
@@ -491,5 +562,14 @@ button .bi {
     object-fit: contain; /* Cubre todo el contenedor sin distorsión */
     top: 0%;
    }
+
+   .blog__card {
+    width: 30%;
+    margin-bottom: 10%;
+   }
+
+   .blog__card--button {
+    margin-bottom: -5%;
+    }
 
   }
