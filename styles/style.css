@@ -556,6 +556,16 @@ button .bi {
     overflow: hidden;
    }
 
+   .event__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%; /* La imagen ocupará toda la altura del contenedor */
+    height: auto; /* Mantener proporción de la imagen */
+    object-fit: contain; /* Cubre todo el contenedor sin distorsión */
+    top: 0%;
+   }
+
    .event__img--image {
     width: 80%; /* La imagen ocupará toda la altura del contenedor */
     height: auto; /* Mantener proporción de la imagen */
