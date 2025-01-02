@@ -242,6 +242,7 @@ a {
     background-color: whitesmoke;
     border-radius: 8px;
     padding: 1rem;
+    margin: 0px;
     margin-bottom: 2vh;
     display: flex;
     flex-direction: column;
@@ -423,14 +424,14 @@ button .bi {
   .footer-brand {
     height: 5vh;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-self: center;
 }
 
 .footerLogo {
-    width: auto; /* La imagen ocupará toda la altura del contenedor */
-    height: 100%; /* Mantener proporción de la imagen */
-    object-fit: cover; /* Cubre todo el contenedor sin distorsión */
+    width: auto; 
+    height: 100%; 
+    object-fit: cover; /
 }
 
 .footerText {
@@ -453,6 +454,17 @@ button .bi {
     margin: 0px 0.5rem;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateX(30%);  /* El elemento está fuera del viewport a la derecha */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Añadir transición para el movimiento */
+}
+
+.fade-in-visible {
+    opacity: 1;
+    transform: translateX(0); /* Mover el elemento a su posición original */
+}
+
 @media (min-width: 1199.98px)  {
     .hero {
       height: 80vh;
@@ -470,9 +482,9 @@ button .bi {
     }
 
     .hero__img--img {
-        width: 100%; /* La imagen ocupará toda la altura del contenedor */
-        height: 100%; /* Mantener proporción de la imagen */
-        object-fit: visible; /* Cubre todo el contenedor sin distorsión */
+        width: 100%; 
+        height: 100%;
+        object-fit: visible;
         position: relative;
         left: -5%;
         overflow: hidden;
@@ -492,6 +504,13 @@ button .bi {
 
     .event {
         width: 50%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .event__button {
+        width: auto;
+        margin-top: 5%;
     }
 
     .herorow {
@@ -512,9 +531,6 @@ button .bi {
         justify-content: center;
     }
 
-    .features {
-
-    }
    .whatsappLink {
     display: flex;
     justify-content: center;
@@ -560,16 +576,16 @@ button .bi {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%; /* La imagen ocupará toda la altura del contenedor */
-    height: auto; /* Mantener proporción de la imagen */
-    object-fit: contain; /* Cubre todo el contenedor sin distorsión */
+    width: 40%;
+    height: auto; 
+    object-fit: contain;
     top: 0%;
    }
 
    .event__img--image {
-    width: 80%; /* La imagen ocupará toda la altura del contenedor */
-    height: auto; /* Mantener proporción de la imagen */
-    object-fit: contain; /* Cubre todo el contenedor sin distorsión */
+    width: 80%;
+    height: auto;
+    object-fit: contain;
     top: 0%;
    }
 
